@@ -1,0 +1,12 @@
+# Xcode specific files
+.DS_Store
+build/
+DerivedData/
+*.hmap
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+.idea/
+.vscode/
+*.moved-aside
+
