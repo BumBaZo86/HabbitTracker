@@ -1,0 +1,34 @@
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Firebase
+GoogleService-Info.plist  # OBS: Ta bort denna rad om du vill ha med din konfigfil i repo
+
+
+# Swift Package Manager
+.swiftpm/
+.xcode/
+.build/
+
+# App Specific
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# System
+*.log
