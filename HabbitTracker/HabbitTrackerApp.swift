@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
-struct HabbitTrackerApp: App {
+struct HabitTrackerApp: App {
+    init() {
+        FirebaseApp.configure()  // Firebase-init här
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
