@@ -10,13 +10,16 @@ import FirebaseCore
 
 @main
 struct HabitTrackerApp: App {
+    @StateObject private var firebaseManager = FirebaseManager.shared
+    
     init() {
-        FirebaseApp.configure()  // Firebase-init här
+        FirebaseApp.configure()
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(firebaseManager)
         }
     }
 }
