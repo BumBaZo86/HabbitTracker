@@ -9,17 +9,18 @@ import SwiftUI
 import FirebaseCore
 
 @main
-struct HabitTrackerApp: App {
-    @StateObject private var firebaseManager = FirebaseManager.shared
-    
+struct HabbitTrackerApp: App {
     init() {
         FirebaseApp.configure()
     }
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(firebaseManager)
         }
     }
+}
+#Preview {
+    ContentView()
+        .environmentObject(FirebaseManager()) // om du använder en EnvironmentObject
 }
